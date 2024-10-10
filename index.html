@@ -17,10 +17,10 @@
 </head>
 <body>
  
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header  class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     <i class="bi bi-card-image me-1"></i>
                     <span>Minha Galeria</span>
                 </a>
@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Home</a>
+                            <a class="nav-link active" href="#home" aria-current="page">Home</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -54,15 +54,15 @@
 
                             <ul class="dropdown-menu w-50 border-0" aria-labelledby="SeçõesDrop">
                                 <li class="mb-2">
-                                    <a href="#ga1" class="dropdown-item text-white">Galeria Flexbox</a>
+                                    <a href="#g1" class="dropdown-item text-white">Galeria Flexbox</a>
                                 </li>
 
                                 <li class="mb-2">
-                                    <a href="#" class="dropdown-item text-white">Seção 2</a>
+                                    <a href="#g2" class="dropdown-item text-white">Galeria Grid 01</a>
                                 </li>
 
                                 <li class="mb-2">
-                                    <a href="#" class="dropdown-item text-white">Seção 3</a>
+                                    <a href="#g3" class="dropdown-item text-white">Layout Youtube</a>
                                 </li>
                                 
                             </ul>
@@ -70,7 +70,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contato</a>
+                            <a rel="external" target="_blank" title="Ir para GITHUB de LEONARDO" href="https://github.com/Ls-Leonardo" class="nav-link">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -79,14 +79,14 @@
     </header>
 
     <main>
-
         <div class="container-fluid" id="intro">
-            <h1>Galerias Responsivas</h1>
+            <p id="home">✏✏</p>
+            <h1>Galeria Responsiva</h1>
             <p>Nessa Página você verá uma galeria de imagens responsivas. Todas elas possuem um layout definido, mas se adaptam ao tamanho da tela graças a tecnologias como flexbox e grid layout.</p>
         </div>
         <hr>
 
-        <h2 id="ga1">Galeria Flexbox</h2>
+        <h2 id="g1">Galeria Flexbox</h2>
         
         <section class="galeria-flex">
             
@@ -109,55 +109,78 @@
         <hr>
 
 
-        <h2>Galeria Grid 01</h2>
+        <h2 id="g2">Galeria Grid 01</h2>
 
         <section class="galeria-grid01">
             <div>
                 <img src="img/carro-1.jpg" alt="Chevrolet Corvette Laranja Na Estrada">
-                <p>Texto</p>
+                <p>Corvette Laranja</p>
             </div>
 
             <div>
                 <img src="img/carro-2.jpg" alt="Carro Mercedes Benz Branco">
-                <p>Texto</p>
+                <p>Mercedes Benz Branco</p>
             </div>
 
             <div>
                 <img src="img/carro-3.jpg" alt="Coupé Bmw Azul">
-                <p>Texto</p>
+                <p>Coupé Bmw Azul</p>
             </div>
 
             <div>
                 <img src="img/carro-4.jpg" alt="Ferrari Vermelha">
-                <p>Texto</p>
+                <p>Ferrari Vermelha</p>
             </div>
 
             <div>
                 <img src="img/carro-5.jpg" alt="Lamborghini Amarela">
-                <p>Texto</p>
+                <p>Lamborghini Amarela</p>
             </div>
 
             <div>
                 <img src="img/carro-6.jpg" alt="Sedan Audi Cinza Estacionado Ao Lado Da Estrada">
-                <p>Texto</p>
+                <p>Sedan Audi Cinza</p>
             </div>
         </section>
+        <hr>
 
+        <h2 id="g3">Layout Estilo Youtube</h2>
 
+        <section class="layout-youtube">
+                <!--Video Principal-->
+                <div class="video-principal">
+                    <img src="img/video-principal.jpg" alt="Video Principal">
+                    <p>Título do Vídeo Principal</p>
+                </div>
 
-
-
-
-
-
-
-
-
-
+                <!--Videos Relacionados-->
+                <div class="videos-relacionados">
+                    <div class="video-item">
+                        <img src="img/video-2.jpg" alt="Video Recomendado 1">
+                        <p>Próximo Video</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="img/video-3.jpg" alt="Video Recomendado 2">
+                        <p>Video Relacionado</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="img/video-4.jpg" alt="Video Recomendado 3">
+                        <p>Video Relacionado</p>
+                    </div>
+                    <div class="video-item">
+                        <img src="img/video-5.jpg" alt="Video Recomendado 4">
+                        <p>Video Relacionado</p>
+                    </div>
+                </div>
+        </section>
+        
     </main>
 
-    <footer>
 
+    
+
+    <footer class="bg-dark">
+        <p>© 2024 Leonardo Sudré. Todos os direitos reservados.</p>
     </footer>
 
    

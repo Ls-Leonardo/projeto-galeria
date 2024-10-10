@@ -5,10 +5,14 @@
     padding: 0;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    height: auto;
 }
 
+h1{
+    margin-top: 25px;
+}
 
 /* estilos para o dropdown */
 .dropdown-menu {
@@ -54,8 +58,116 @@ section.galeria-flex >div{
     flex: 1 1 300px;
     margin: 0 5px;
     
-    
-    
+}
+
+/* Galeria Grid01 */
+
+/* grid container */
+section.galeria-grid01{
+    max-width: 800px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+section.galeria-grid01 > div > p{
+    background-color: #212529;
+    color: whitesmoke;
+    padding: 3px;
     
 }
+
+/* grid item */
+section.galeria-grid01 > div{
+    margin: 0px 5px;
+}
+
+section.galeria-grid01 > div:nth-child(1){
+    grid-column: 1/3;
+}
+
+section.galeria-grid01 > div:nth-child(6){
+    grid-column: 1/3;
+}
+
+/* Layout Bônus - estilo youtube */
+
+section.layout-youtube{
+    display: grid;
+    max-width: 900px;
+    margin: 0px auto;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+
+section.layout-youtube > div{
+    margin: 0px 5px;
+}
+
+/*  Video Principal */
+section.layout-youtube .video-principal{
+    background-color: #f1f1f1;
+    padding: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+section.layout-youtube .video-principal p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.layout-youtube .videos-relacionados{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+section.layout-youtube .videos-relacionados .video-item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+ }
+
+ @media (max-width: 768px){
+    section.layout-youtube{
+        width: 70vw;
+        
+        grid-template-columns: 1fr;
+    }
+    section.layout-youtube .videos-relacionados{
+        flex-flow: column nowrap;
+        
+
+    }
+
+    section.layout-youtube .videos-relacionados .video-item{
+        flex: 1 1 100%;
+    }
+ }
+
+
+ footer{
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer > p{
+    margin: 0px;
+ }
+
+
+
+
+
+
+
 

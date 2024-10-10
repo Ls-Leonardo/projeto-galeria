@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* estilos para o dropdown */
 .dropdown-menu {
@@ -19,3 +23,39 @@
 div > ul > li.nav-item{
     margin: 0px 15px;
 }
+
+div#intro{
+    
+    margin: 30px auto;
+    
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+/* container pai */
+section.galeria-flex{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 800px;
+    margin: 10px auto;
+    gap: 15px;
+   
+}
+
+h2{
+    text-align: center;
+}
+
+/* Flex itens */
+section.galeria-flex >div{
+    flex: 1 1 300px;
+    margin: 0 5px;
+    
+    
+    
+    
+}
+

@@ -1,0 +1,1 @@
+Esse projeto foi criado no dia 10/10/2024 com o objetivo de praticar os conceitos de criação de layout usando tecnologias como flexbox e grid. Fique a vontade para usar o código para seu aprendizado. Se tiver dúvidas ou sugestões basta me procurar. 
